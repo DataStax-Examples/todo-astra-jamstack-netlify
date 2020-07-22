@@ -246,11 +246,11 @@ class TodoApp extends React.Component {
             {
               renderRoutes(this.props.route.routes, {
                 todos,
-                onToggle: (todo) => { this.toggle(todo); },
-                onDestroy: (todo) => { this.destroy(todo); },
-                onEdit: (todo) => { this.edit(todo); },
+                onToggle: todo => this.toggle(todo),
+                onDestroy: todo => this.destroy(todo),
+                onEdit: todo => this.edit(todo),
                 editing: todo => this.state.editing === todo.id,
-                onSave: (todo, text) => { this.save(todo, text); },
+                onSave: (todo, text) => this.save(todo, text),
                 onCancel: () => this.cancel(),
               })
             }
@@ -271,8 +271,8 @@ class TodoApp extends React.Component {
                 className="new-todo"
                 placeholder="What needs to be done?"
                 value={this.state.newTodo}
-                onKeyDown={(event) => { this.handleNewTodoKeyDown(event); }}
-                onChange={(event) => { this.handleChange(event); }}
+                onKeyDown={(event) => this.handleNewTodoKeyDown(event)}
+                onChange={(event) => this.handleChange(event)}
                 autoFocus
             />
           </header>

@@ -83,15 +83,6 @@ input[type="checkbox"] {
 	text-rendering: optimizeLegibility;
 }
 
-.todoapp h1:before {
-	font-size: 0.3em;
-	color: #606060;
-	content: "serverless";
-	position: absolute;
-	top: 0em;
-	right: 2em;
-}
-
 .new-todo,
 .edit {
 	position: relative;
