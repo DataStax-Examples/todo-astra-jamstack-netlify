@@ -93,7 +93,6 @@ export default class TodoItem extends React.Component {
           <label onDoubleClick={this.handleEdit}>
             {this.props.todo.title}
           </label>
-          <button className="destroy" onClick={this.props.onDestroy} />
         </div>
         <input
           ref="editField"
