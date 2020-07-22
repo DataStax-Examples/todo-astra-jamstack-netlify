@@ -9,6 +9,10 @@ const resolve = {
   extensions: ['.js', '.jsx'],
 };
 
+if (!process.env.ASTRA_ENDPOINT) {
+  throw new Error('An ASTRA_ENDPOINT env variable is required!');
+}
+
 const clientConfig = {
   entry,
   target: 'web',
@@ -72,9 +76,9 @@ const clientConfig = {
   ],
   devServer: {
     proxy: {
-       "/api": {
-         "target": 'https://4e62bc79-0e12-4667-bd7d-2191ece2a32c-us-east1.apps.astra.datastax.com',
-         "changeOrigin": true
+       '/api': {
+         target: process.env.ASTRA_ENDPOINT,
+         changeOrigin: true
        }
     }
   }
