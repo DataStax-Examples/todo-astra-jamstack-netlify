@@ -5,8 +5,6 @@ using a [DataStax Astra](https://astra.datastax.com/register) free tier database
 
 The project interacts directly with the database from the react based frontend application and can be deployed on Netlify for free with a few clicks.
 
-![todo](./todo.png)
-
 ## Pre-reqs
 
 Create [DataStax Astra](https://astra.datastax.com/register) Cassandra database (free tier): 
