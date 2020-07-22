@@ -6,12 +6,12 @@ export default function TodoList(props) {
     <TodoItem
       key={todo.id}
       todo={todo}
-      onToggle={() => { props.onToggle(todo); }}
-      onDestroy={() => { props.onDestroy(todo); }}
-      onEdit={() => { props.onEdit(todo); }}
+      onToggle={() => props.onToggle(todo)}
+      onDestroy={() => props.onDestroy(todo)}
+      onEdit={() => props.onEdit(todo)}
       editing={props.editing(todo)}
-      onSave={(text) => { props.onSave(todo, text); }}
-      onCancel={() => { props.onCancel(); }}
+      onSave={(text) => props.onSave(todo, text)}
+      onCancel={() => props.onCancel()}
     />
   ));
 
