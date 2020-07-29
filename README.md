@@ -5,7 +5,7 @@ The project interacts directly with the database from the [ReactJS](https://reac
 
 Contributor(s): [Sebastián Estévez](https://github.com/phact), based on the work of [Jake Luciani](https://github.com/tjake/todo-astra-react-serverless/)
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/phact/todo-astra-jamstack-netlify) [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/phact/todo-astra-jamstack-netlify)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/DataStax-Examples/todo-astra-jamstack-netlify) [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/DataStax-Examples/todo-astra-jamstack-netlify)
 
 ## Objectives
 * Provide a fullstack development example using Astra as the storage backend
