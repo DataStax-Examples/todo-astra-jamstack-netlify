@@ -1,10 +1,22 @@
 # JAMStack + Netlify + Astra + Cassandra Example 📒
-This is an example React Todo application
-using a [DataStax Astra](https://astra.datastax.com/register) free tier database.
+This is an example React To-Do application using a [DataStax Astra](https://astra.datastax.com/register) free tier database.
 
-The project interacts directly with the database from the React frontend and can be deployed to Netlify for free with a few clicks.
+The project interacts directly with the database from the [ReactJS](https://reactjs.org/) frontend and can be deployed to [Netlify](https://www.netlify.com/) for free with a few clicks.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/DataStax-Examples/todo-astra-jamstack-netlify) [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/DataStax-Examples/todo-astra-jamstack-netlify)
+Contributor(s): [Sebastián Estévez](https://github.com/phact), based on the work of [Jake Luciani](https://github.com/tjake/todo-astra-react-serverless/)
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/phact/todo-astra-jamstack-netlify) [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/phact/todo-astra-jamstack-netlify)
+
+## Objectives
+* Provide a fullstack development example using Astra as the storage backend
+
+## How this works
+Once the Astra credentials are provided, the necessary tables are created in the database. The webservice will be available on port 8080 once the application has been deployed.
+
+[JAMstack](https://jamstack.org/) is a big leap forward in how we can write web applications that are easy to write, deploy, scale, and also maintain. Using this approach means that newly created content is rendered from a content API, while a static render of it is being built into the site for future.
+
+Deploying a static web application on [Netlify](https://www.netlify.com/) allows us to reaps the benefits and not having to rely on our own webserver; it will also handle the Astra user credentials for us.
+
 ## Getting Started Paths:
 1. [Run the app locally](#running-on-your-local-machine)
 2. [Run the app is Gitpod](#running-on-gitpod)
@@ -19,8 +31,15 @@ The project interacts directly with the database from the React frontend and can
 ![image](https://user-images.githubusercontent.com/3254549/88738761-42384800-d0ee-11ea-82e8-a2cd085b6f83.png)
 4. Clone the repository:
 ![image](https://user-images.githubusercontent.com/3254549/88739059-6e53c900-d0ee-11ea-9b25-56b2436a9817.png)
-5. Install Node dependencies: `npm install`.
-6. Set `ASTRA_DB_USERNAME`, `ASTRA_DB_PASSWORD`, `ASTRA_DB_KEYSPACE`, `ASTRA_DB_ID`, and `ASTRA_DB_REGION` environment variables.
+5. You will need Node installed to build locally. Install Node dependencies: `npm install`.
+6. Set the environment variables
+```
+ export ASTRA_DB_USERNAME = xxxx
+ export ASTRA_DB_PASSWORD = xxxx
+ export ASTRA_DB_KEYSPACE = xxxx
+ export ASTRA_DB_ID = xxxx  #ex:4e62bc79-0e12-4667-bd7d-2191ece2a32c
+ export ASTRA_DB_REGION = xxxx  #ex:us-east
+ ```
 7. Build the app: `npm start`.
 8. Open http://localhost:8080 to view your application:
 ![image](https://user-images.githubusercontent.com/3254549/88739693-fdadac00-d0ef-11ea-9f95-d2ee643b5431.png)
@@ -30,7 +49,7 @@ The project interacts directly with the database from the React frontend and can
 ![image](https://user-images.githubusercontent.com/3254549/88737275-c938f080-d0ed-11ea-8273-f547da8ef9e6.png)
 2. Click the 'Open in Gitpod link':
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/DataStax-Examples/todo-astra-jamstack-netlify)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/phact/todo-astra-jamstack-netlify)
 
 3. Wait for your Gitpod workspace to start:
 ![image](https://user-images.githubusercontent.com/3254549/88744125-5171c280-d0fb-11ea-9676-de4589e42589.png)
@@ -48,7 +67,7 @@ You can find your database id here:
 ![image](https://user-images.githubusercontent.com/3254549/88737275-c938f080-d0ed-11ea-8273-f547da8ef9e6.png)
 2. Click the 'Deploy to Netlify' button:
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/DataStax-Examples/todo-astra-jamstack-netlify)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/phact/todo-astra-jamstack-netlify)
 
 3. Connect your GitHub account:
 ![image](https://user-images.githubusercontent.com/3254549/88744656-d9a49780-d0fc-11ea-97ad-f05aa0ace11e.png)
