@@ -7,7 +7,7 @@ The project interacts directly with the database from the React frontend and can
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/DataStax-Examples/todo-astra-jamstack-netlify) [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/DataStax-Examples/todo-astra-jamstack-netlify)
 ## Getting Started Paths:
 1. [Run the app locally](#running-on-your-local-machine)
-2. [Run the app is Gitpod](#running-on-gitpod)
+2. [Run the app on Gitpod](#running-on-gitpod)
 3. [Deploy the app to Netlify](#deploying-to-netlify)
 
 ### Running on your local machine
