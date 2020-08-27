@@ -5,9 +5,9 @@ tasks:
     command:  . ./gitpod-setup.sh && netlify dev
     name: Setup script
 ports:
-  - port: 8888 # Webpack dev server
-    onOpen: ignore
   - port: 8080 # Application
+    onOpen: ignore
+  - port: 8888 # Webpack dev server
     onOpen: open-browser
 github:
   prebuilds:
