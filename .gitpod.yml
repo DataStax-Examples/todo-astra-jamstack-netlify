@@ -4,9 +4,12 @@ tasks:
     command:  . ./gitpod-setup.sh && yarn start:dev
     name: Setup script
 ports:
+  - port: 34567
+    onOpen: ignore
   - port: 8080-8081
-    onOpen: open-browser
+    onOpen: ignore
   - port: 8080
+    onOpen: open-browser
 github:
   prebuilds:
     master: true
