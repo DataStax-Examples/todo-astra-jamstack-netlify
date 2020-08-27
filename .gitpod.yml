@@ -4,11 +4,9 @@ tasks:
     command:  . ./gitpod-setup.sh && yarn start:dev
     name: Setup script
 ports:
-  - port: 33755
+  - port: 8888 # Webpack dev server
     onOpen: ignore
-  - port: 8888
-    onOpen: ignore
-  - port: 8080
+  - port: 8080 # Application
     onOpen: open-browser
 github:
   prebuilds:
