@@ -44,7 +44,6 @@ module.exports = {
       patterns: [
         {from: 'assets', to: 'assets'},
         {from: 'css', to: 'css'},
-        {from: 'public'},
         {from: 'index.html'},
       ]
     }),
