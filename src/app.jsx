@@ -48,6 +48,7 @@ class TodoApp extends React.Component {
     const {sessionId} = this.state;
     this.toggleLoadingStatus();
     await deleteTodos(sessionId);
+    await this.loadTodos();
     this.toggleLoadingStatus();
   }
 
