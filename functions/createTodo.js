@@ -18,10 +18,10 @@ exports.handler = async (event, context) => {
       body: JSON.stringify({
         columns: body.columns
       })
-    }).then(res => res.json());
+    });
     return {
       statusCode: 200,
-      body: JSON.stringify(response)
+      body: JSON.stringify(await response.json())
     };
   } catch (e) {
     return {
