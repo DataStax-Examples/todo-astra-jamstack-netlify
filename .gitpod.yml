@@ -1,7 +1,8 @@
-image: gitpod/workspace-full
+image:
+  file: .gitpod.Dockerfile
 tasks:
   - init: yarn install
-    command:  . ./gitpod-setup.sh && yarn start:dev
+    command:  . ./gitpod-setup.sh && netlify dev
     name: Setup script
 ports:
   - port: 8888 # Webpack dev server
