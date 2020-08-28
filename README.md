@@ -5,6 +5,9 @@ This example interacts directly with the database from the [ReactJS](https://rea
 
 Contributor(s): [Sebastián Estévez](https://github.com/phact), based on the work of [Jake Luciani](https://github.com/tjake/todo-astra-react-serverless/)
 
+![todolist app](https://github.com/DataStax-Examples/todo-astra-jamstack-netlify/workflows/nodejs/badge.svg)
+
+
 ## Objectives
 * Provide a fullstack development example using Astra as the storage backend
 

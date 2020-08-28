@@ -1,0 +1,29 @@
+name: nodejs
+
+on: [push]
+
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm install
+    - run: npm run build
+      env:
+        CI: true
+        ASTRA_DB_ID: ${{ secrets.ASTRA_DB_ID }}
+        ASTRA_DB_REGION: ${{ secrets.ASTRA_DB_REGION }}
+        ASTRA_DB_KEYSPACE: ${{ secrets.ASTRA_DB_KEYSPACE }}
+        ASTRA_DB_PASSWORD: ${{ secrets.ASTRA_DB_PASSWORD }}
+        ASTRA_DB_USERNAME: ${{ secrets.ASTRA_DB_USERNAME }}
